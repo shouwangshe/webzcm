@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心</title>
+		<link rel="stylesheet" type="text/css" href="css/help.css"/>
+	</head>
+	<body>
+		<header class="toubu flex">
+			<span href="index.html" class="back"></span>
+			<span>盈信计划2467号1期</span>
+			<span class="header_menu"></span>
+		</header>
+		<div class="help">
+			<ul>
+				<li><span class="iconfont icon-home icon"></span>了解招财猫<i class="fr">></i></li>
+				<li><span class="iconfont icon-iconfontzhuce icon"></span>注册/登陆<i class="fr">></i></li>
+				<li><span class="iconfont icon-renzheng icon"></span>认证<i class="fr">></i></li>
+				<li><span class="iconfont icon-touzi icon"></span>投资<i class="fr">></i></li>
+				<li><span class="iconfont icon-chongzhi icon"></span>充值，体现<i class="fr">></i></li>
+				<li><span class="iconfont icon-book icon"></span>名词解释<i class="fr">></i></li>
+				<li><span class="iconfont icon-wenti icon"></span>意见反馈<i class="fr">></i></li>
+				<li><span class="iconfont icon-iconziti10 icon"></span>客户端下载<i class="fr">></i></li>
+			</ul>
+		</div>
+		<div class="kefu-box flex">
+			<div class="kefu-bg">
+				
+			</div>
+			<div class="kefu-txt">
+				<p>拨打客服热线:<span>400-991-7005</span></p>
+				<p>周一至周五 9:00--20:00 周六至周日 9:00--18:00</p>
+			</div>
+		</div>
+		<footer>
+			<p>
+				<a href="">触屏版</a>|<a href="">电脑版</a>|<a href="">APP下载</a>
+			</p>
+			<p>
+				©2017招财毛理财 浙备案
+			</p>
+		</footer>
+		<div class="zhezhao" id="zhezhao" style="display: none;">
+			<section class="main-nav">
+				<a href=""><span>&nbsp;首页&nbsp;</span></a>
+				<a href=""><span>关于我们</span></a>
+				<a href=""><span>新手指引</span></a>
+				<a href=""><span>帮助中心</span></a>
+			</section>
+		</div>
+		
+		<script src="js/zepto/zepto.js"></script>
+		<script src="js/zepto/event.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("html").css("font-size",document.documentElement.clientWidth/750 * 75 +"px");	
+				$(".header_menu")[0].addEventListener("touchstart",function(){
+					$("#zhezhao").toggle();
+				})
+			});		
+		</script>
+	</body>
+</html>

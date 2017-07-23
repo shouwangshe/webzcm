@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>招财猫</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+	</head>
+	<body>
+		<header class="flex">
+			<h1><a href=""></a>招财猫理财</h1>
+			<div>
+				<a href="">注册</a>
+				|
+				<a href="">登陆</a>
+			</div>
+		</header>
+		<nav class="flex">
+			<a href="" class="current">首页</a>
+			<a href="">我要投资</a>
+			<a href="">账户中心</a>
+		</nav>
+		<div id='mySwipe' class='swipe'>
+		  	<div class='swipe-wrap'>
+			    <div><img src="img/banner20170225.jpg" alt=""></div>
+			    <div><img src="img/home_regbanner.png" alt=""></div>
+		  	</div>
+			<ul>
+			    <li></li>
+			    <li></li>
+			</ul>
+		</div>
+		<section class="main-nav">
+			<a href=""><span>安全保障</span></a>
+			<a href=""><span>关于我们</span></a>
+			<a href=""><span>新手指引</span></a>
+			<a href=""><span>帮助中心</span></a>
+		</section>
+		<section class="content">
+			<div class="flex title">
+				<h2>热门产品</h2>
+				<a href="">更多</a>
+			</div>
+			<div class="product flex">
+				<div class="left">
+					<em>盈信计划2467号1期</em><br />
+					<i>9.2%<span>+0.5%</span></i>
+				</div>
+				<div class="center">
+					<em>180</em><span>&nbsp;天</span>
+					<span class="touzi">投资期限</span>
+				</div>
+				<div class="right">
+					<div class="right-top">
+						<a href="">返现金</a><span class="vip"></span>
+					</div>
+					<div id="circle" data-bfb="37" class="circle">
+						<canvas class="loader"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="product flex">
+				<div class="left">
+					<em>盈信计划2467号2期</em><br />
+					<i>9.2%<span>+0.5%</span></i>
+				</div>
+				<div class="center">
+					<em>180</em><span>&nbsp;天</span>
+					<span class="touzi">投资期限</span>
+				</div>
+				<div class="right">
+					<div class="right-top">
+						<a href="">返现金</a><span class="vip"></span>
+					</div>
+					<div id="circle" data-bfb="56" class="circle">
+						<canvas class="loader"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="product flex">
+				<div class="left">
+					<em>盈信计划2467号3期</em><br />
+					<i>9.2%<span>+0.5%</span></i>
+				</div>
+				<div class="center">
+					<em>180</em><span>&nbsp;天</span>
+					<span class="touzi">投资期限</span>
+				</div>
+				<div class="right">
+					<div class="right-top">
+						<a href="">返现金</a><span class="vip"></span>
+					</div>
+					<div id="circle" data-bfb="62" class="circle">
+						<canvas class="loader"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="flex title qiye">
+				<h2>企业动态</h2>
+			</div>
+		</section>
+		<ul class="news">
+			<li>
+				<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				<div class="txt">
+					<p>春日植树  植树专享</p>
+					<p><em class="fr">2017-03-10</em>来源:招财猫理财</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/news20170309133946_工资日标题.jpg" alt="" />
+				<div class="txt">
+					<p>全民植树  植树专享</p>
+					<p><em class="fr">2017-03-10</em>来源:招财猫理财</p>
+				</div>
+			</li>
+			<li>
+				<img src="img/news20170310144045_植树节专享标题.jpg" alt="" />
+				<div class="txt">
+					<p>每月工资日  理财自加薪</p>
+					<p><em class="fr">2017-03-10</em>来源:招财猫理财</p>
+				</div>
+			</li>
+		</ul>
+		<footer>
+			<p>
+				<a href="">触屏版</a>|<a href="">电脑版</a>|<a href="">APP下载</a>
+			</p>
+			<p>
+				©2017招财毛理财 浙备案
+			</p>
+		</footer>
+		<script src="js/zepto/zepto.js"></script>
+		<script src="js/swipe.js"></script>
+		<script src="js/jquery.classyloader.js"></script>
+		<script type="text/javascript">
+			//console.info( $("#circle").data("bfb") );
+			//console.info( $(".circle") );
+			$(function(){
+				$("html").css("font-size",document.documentElement.clientWidth/750 * 75 +"px");
+				var w = document.documentElement.clientWidth/750*136;
+				var fs = document.documentElement.clientWidth/750*38+"px";
+				$(".circle").each(function(index,el){
+					console.info( $(this) );
+					var bfb = $(this).data("bfb");
+					
+					$(this).find(".loader").ClassyLoader({
+					 	width: w,
+		            	height:w,
+		                percentage: bfb,
+		                speed: 20,
+		                fontSize: fs,
+		                diameter: 0.4*w,
+		                lineColor: '#fb4034',
+		                fontColor: '#fa3012',
+		                remainingLineColor: 'rgba(200,200,200,0.4)',
+		                lineWidth: w/20
+		            });
+				});		
+			});
+			var elem = document.getElementById('mySwipe');
+				window.mySwipe = Swipe(elem, {
+				  startSlide: 0,/*开始是第几页*/ 
+				  /*auto: 2000,自动播放的时间间隔*/ 
+				  continuous: true,// 
+				  // disableScroll: true,
+				  // stopPropagation: true,
+				  callback: function(index, element) {
+				    //把第index个li变亮
+				    //把全部的变暗
+				    $("li").css("background-color","red");
+				    $("li").eq(index%2).css("background-color","#fff");
+				    //把当前的变亮
+				    console.info(index,element);
+				  }
+			  // transitionEnd: function(index, element) {}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,339 @@
+/*初始化*/
+ul,
+body,
+ol,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: bottom;
+}
+body {
+  font-family: "微软雅黑";
+  background-color: #f9f9f9;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: 0 none;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+i,
+em {
+  font-style: normal;
+}
+/*一些类*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+/*换算px --  rem*/
+/*好像没有用*/
+/*好像没有用*/
+/*通用部分的样式*/
+.toubu {
+  padding: 0rem 0.48rem 0rem 0.30666667rem;
+  height: 1.22666667rem;
+  background-color: #fa3432;
+  font-size: 0.37333333rem;
+  color: #fff;
+}
+.toubu .back {
+  width: 0.64rem;
+  height: 0.4rem;
+  background: url(../img/ico_top_1.png) no-repeat left center;
+  background-size: 0.64rem 0.4rem;
+}
+.toubu .header_menu {
+  width: 0.56rem;
+  height: 0.45333333rem;
+  background: url(../img/ico_top_2.png) no-repeat left center;
+  background-size: 0.56rem 0.45333333rem;
+}
+/*图标字体*/
+@font-face {
+  font-family: "iconfont";
+  src: url('font/iconfont.eot?t=1490581582141');
+  /* IE9*/
+  src: url('font/iconfont.eot?t=1490581582141#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/iconfont.woff?t=1490581582141') format('woff'), /* chrome, firefox */ url('font/iconfont.ttf?t=1490581582141') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('font/iconfont.svg?t=1490581582141#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-chongzhi:before {
+  content: "\f029c";
+}
+.icon-wenti:before {
+  content: "\f00bd";
+}
+.icon-iconfontzhuce:before {
+  content: "\e639";
+}
+.icon-home:before {
+  content: "\e6b8";
+}
+.icon-iconziti10:before {
+  content: "\e613";
+}
+.icon-dianhua:before {
+  content: "\e621";
+}
+.icon-renzheng:before {
+  content: "\e646";
+}
+.icon-book:before {
+  content: "\e60d";
+}
+.icon-order:before {
+  content: "\e614";
+}
+.icon-touzi:before {
+  content: "\e643";
+}
+.icon-caidanicondianyinghui:before {
+  content: "\e60c";
+}
+.icon-feiji:before {
+  content: "\e655";
+}
+.icon-gongjiaoche:before {
+  content: "\e658";
+}
+.icon-huoche:before {
+  content: "\e65a";
+}
+.icon-car:before {
+  content: "\e606";
+}
+/*zhezhao*/
+.zhezhao {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.4rem;
+  top: 1.22666667rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.zhezhao .main-nav {
+  background-color: #fff;
+  padding-top: 0.45333333rem;
+  font-size: 0.34666667rem;
+  height: 1.86666667rem;
+  text-align: center;
+  display: flex;
+}
+.zhezhao .main-nav a {
+  flex: 1 1 auto;
+  padding-top: 0.8rem;
+  height: 0.53333333rem;
+  background-size: 0.6rem 0.6rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-right: 1px solid #ccc;
+}
+.zhezhao .main-nav a:nth-of-type(1) {
+  background-image: url(../img/ico_menu_1.png);
+}
+.zhezhao .main-nav a:nth-of-type(2) {
+  background-image: url(../img/ico_menu_2.png);
+}
+.zhezhao .main-nav a:nth-of-type(3) {
+  background-image: url(../img/ico_menu_3.png);
+}
+.zhezhao .main-nav a:nth-of-type(4) {
+  background-image: url(../img/ico_menu_4.png);
+  border-right: 0 none;
+}
+.zhezhao .main-nav span {
+  color: #808080;
+}
+body {
+  background-color: #fff;
+}
+.product-detail .rate {
+  padding-top: 0.66666667rem;
+  height: 2.29333333rem;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #ff3c01, #d80607);
+}
+.product-detail .rate .dazi {
+  font-size: 0.90666667rem;
+  display: block;
+  margin-bottom: 0.33333333rem;
+}
+.product-detail .product-date {
+  font-size: 0.4rem;
+  color: #777;
+  height: 1.05333333rem;
+  text-align: center;
+  border-bottom: 1px solid #f1f0f0;
+}
+.product-detail .product-date span:nth-child(1) {
+  border-right: 1px solid #f1f0f0;
+}
+.product-detail .product-date span {
+  flex: 1 1 auto;
+}
+.product-detail .product-items {
+  font-size: 0.32rem;
+  color: #ffc166;
+  text-align: center;
+  width: 8.53333333rem;
+  height: 2.70666667rem;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 0.90666667rem;
+  background: url(../img/detail_icon_bg.png) no-repeat center center;
+  background-size: 8.53333333rem 2.70666667rem;
+  justify-content: space-around;
+}
+.product-detail .product-items li span {
+  padding-left: 0.90666667rem;
+  height: 0.73333333rem;
+  line-height: 0.73333333rem;
+}
+.product-detail .product-items li:nth-child(1) span:nth-child(1) {
+  background: url(../img/detail_icon_01.png) no-repeat left center;
+  background-size: 0.73333333rem 0.73333333rem;
+}
+.product-detail .product-items li:nth-child(1) span:nth-child(2) {
+  background: url(../img/detail_icon_02.png) no-repeat left center;
+  background-size: 0.73333333rem 0.73333333rem;
+}
+.product-detail .product-items li:nth-child(2) span:nth-child(1) {
+  background: url(../img/detail_icon_03.png) no-repeat left center;
+  background-size: 0.73333333rem 0.73333333rem;
+}
+.product-detail .product-items li:nth-child(2) span:nth-child(2) {
+  background: url(../img/detail_icon_04.png) no-repeat left center;
+  background-size: 0.73333333rem 0.73333333rem;
+}
+.product-detail .pro-bg {
+  margin: 1.17333333rem 0.44rem 0rem 0.44rem;
+  height: 0.21333333rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.product-detail .pro-bg .pro-font {
+  position: relative;
+  width: 2rem;
+  height: 0.21333333rem;
+  background-color: #fb0502;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.product-detail .pro-bg .pro-font span {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.42666667rem;
+  background-color: #fb0502;
+  right: -0.4rem;
+  bottom: 0.45333333rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  font-size: 0.21333333rem;
+  color: #fff;
+  text-align: center;
+}
+.product-detail .pro-bg .pro-font span:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  border: 6px solid transparent;
+  border-top-color: #fb0502;
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+}
+.product-detail .product-renshu {
+  font-size: 0.29333333rem;
+  padding-left: 0.44rem;
+  padding-right: 0.44rem;
+  margin-top: 0.32rem;
+  color: #808080;
+}
+.product-detail .product-renshu li span {
+  color: #FF0000;
+}
+.check {
+  text-align: center;
+  font-size: 0.29333333rem;
+  position: absolute;
+  width: 100%;
+  bottom: 1.8rem;
+}
+.check a {
+  color: #808080;
+  font-size: 0.29333333rem;
+}
+footer {
+  padding-left: 0.48rem;
+  padding-right: 0.16rem;
+  height: 1.4rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0px;
+  background-color: #f0f0f0;
+}
+footer a {
+  font-size: 0.42666667rem;
+  color: #f90;
+  border-bottom: 1px solid #f90;
+}
+footer button {
+  width: 6.89333333rem;
+  height: 1.09333333rem;
+  font-size: 0.45333333rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  background-color: #FA3432;
+  color: #fff;
+}
+/*主要 带图的导航开始*/

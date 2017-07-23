@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登陆页</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<header class="toubu flex">
+			<span href="index.html" class="back"></span>
+			<span>验证手机号</span>
+			<span class="header_menu"></span>
+		</header>
+		<div class="bg-mao">		
+		</div>
+		<form class="login-form">
+			<h3 class="tel-title">请输入手机号:</h3>
+			<input type="text" placeholder="请输入手机号"  class="tel bc"/>
+			<input type="button" id="next" value="下一步" class="next bc"/>
+			<p class="tiaoli">阅读并同意《招财猫用户使用隐私条例》</p>
+		</form>
+		<footer>
+			<p>
+				<a href="">触屏版</a>|<a href="">电脑版</a>|<a href="">APP下载</a>
+			</p>
+			<p>
+				©2017招财毛理财 浙备案
+			</p>
+		</footer>
+		
+		
+		<div class="zhezhao" id="zhezhao" style="display: none;">
+			<section class="main-nav">
+				<a href=""><span>&nbsp;首页&nbsp;</span></a>
+				<a href=""><span>关于我们</span></a>
+				<a href=""><span>新手指引</span></a>
+				<a href=""><span>帮助中心</span></a>
+			</section>
+		</div>
+		<script src="js/zepto/zepto.js"></script>
+		<script src="js/zepto/event.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("html").css("font-size",document.documentElement.clientWidth/750 * 75 +"px");	
+				$(".header_menu")[0].addEventListener("touchstart",function(){
+					$("#zhezhao").toggle();
+				})
+			});		
+		</script>
+	</body>
+</html>

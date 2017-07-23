@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+	</head>
+	<body>
+		<header class="toubu flex">
+			<span href="index.html" class="back"></span>
+			<span>盈信计划2467号1期</span>
+			<span class="header_menu"></span>
+		</header>
+		<div class="product-detail">
+			<div class="rate">
+				<span class="dazi">9.2%+0.5%</span>
+				<span>9.7%&nbsp;&nbsp;(9.2%+活动加息0.5%)</span>
+			</div>
+			<div class="product-date flex">
+				<span>1000元起投</span>
+				<span>期限180天</span>
+			</div>
+			<ul class="product-items flex"> 
+				<li class="flex">
+					<span>省级律所法律支持</span>
+					<span>省级律所法律支持</span>
+				</li>
+				<li class="flex">
+					<span>省级律所法律支持</span>
+					<span>省级律所法律支持</span>
+				</li>
+			</ul>
+			<div class="pro-bg">
+				<div class="pro-font">
+					<span>37%</span>
+				</div>
+			</div>
+			<ul class="product-renshu flex">
+				<li>已投资<span>37</span>人</li>
+				<li>剩余可投资<span>6230000</span>元</li>
+			</ul>
+			<div class="check">
+				<a href="">查看项目详情></a>
+			</div>
+		</div>
+		<footer class="flex">
+			<a href="">收益估算</a>
+			<button>立即投资</button>
+		</footer>
+		<div class="zhezhao" id="zhezhao" style="display: none;">
+			<section class="main-nav">
+				<a href=""><span>&nbsp;首页&nbsp;</span></a>
+				<a href=""><span>关于我们</span></a>
+				<a href=""><span>新手指引</span></a>
+				<a href=""><span>帮助中心</span></a>
+			</section>
+		</div>
+		<script src="js/zepto/zepto.js"></script>
+		<script src="js/zepto/event.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("html").css("font-size",document.documentElement.clientWidth/750 * 75 +"px");	
+				
+
+				$(".header_menu")[0].addEventListener("touchstart",function(){
+					$("#zhezhao").toggle();
+				})
+			});	
+			
+			
+		</script>
+	</body>
+</html>
